@@ -38,10 +38,14 @@
                         <input id="apartments-check" type="checkbox" name="apartments" checked>
                         <label for="apartments-check">Апартаменты</label>
                     </fieldset>
-                    <p>
-                        <label for="cost-range">Стоимость в сутки (Р):</label>
-                        от 0<input id="cost-range" type="range" name="cost" min="0" max="3000"> до 3000
-                    </p>
+                    <fieldset>
+                        <legend>Стоимость в сутки (Р):</legend>
+                        От<input type="number" id="min-value" name="min-value" min="0" max="3000" value="0">
+                        <button type="button"></button>
+                        <div><!--Здесь будет ползунок--></div>
+                        До<input type="number" id="max-value" name="max-value" min="0" max="3000" value="3000">
+                        <button type="button"></button>
+                    </fieldset>
                     <p>
                         <button type="submit" value="Показать">Показать</button>
                     </p>

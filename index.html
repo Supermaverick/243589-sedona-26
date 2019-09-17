@@ -14,9 +14,7 @@
                     <li><a href="">Карта штата</a></li>
                     <li><a href="catalog.html">Гостиницы</a></li>
                 </ul>
-                <img src="img/background-photo.jpg" width="1200" height="773" alt="Вид на Седону">
-                <img src="img/polygon.png" width="1201" height="59">
-                <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
+                <img src="img/intro.jpg" width="1200" height="780" alt="Добро пожаловать в Седону">
             </nav>
         </header>
         <main>
@@ -84,7 +82,31 @@
                 <img src="img/map.png" width="1200" height="593" alt="Карта Седоны">
                 <section>
                     <h2>Поиск гостиницы в Седоне</h2>
-                    <!-- Здесь будет форма -->
+                    <form action="https://echo.htmlacademy.ru" method="get">
+                        <p>
+                            <label for="data-arrival">Дата заезда:</label>
+                            <input id="data-arrival" type="text" name="data-arrival" value="" placeholder="24 апреля 2017">
+                        </p>
+                        <p>
+                            <label for="data-departure">Дата выезда:</label>
+                            <input id="data-departure" type="text" name="data-departure" value="" placeholder="4 июля 2017">
+                        </p>
+                        <p>
+                            <label for="adult">Взрослые:</label>
+                            <button type="button">-</button>
+                            <input id="adult" type="text" name="adult" value="" placeholder="2">
+                            <button type="button">+</button>
+                        </p>
+                        <p>
+                            <label for="child">Дети:</label>
+                            <button type="button">-</button>
+                            <input id="child" type="text" name="child" value="" placeholder="0">
+                            <button type="button">+</button>
+                        </p>
+                        <p>
+                            <button type="button">Найти</button>
+                        </p>
+                    </form>
                 </section>
             </section>
         </main>
@@ -92,9 +114,9 @@
             <a href="#">#visitsedona</a>
             <div>
             <ul>
-                <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="twitter"></a></li>
-                <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-                <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a></li>
+                <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="twitter" aria-label="Седона в Твиттер"></a></li>
+                    <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook" aria-label="Седона в Фейсбук"></a></li>
+                    <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube" aria-label="Седона на Ютуб"></a></li>
             </ul>
             </div>
             <p>Website by</p>

@@ -19,16 +19,41 @@
         <main>
             <h1>Поиск гостиниц в Седоне</h1>
             <section>
-                <img src="img/filter-background.jpg" width="1200" height="562" alt="Поиск гостиницы">
-                <!-- Здесь будет форма -->
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <fieldset>
+                        <legend>Инфраструктура:</legend>
+                        <input id="pool-check" type="checkbox" name="pool" checked>
+                        <label for="pool-check">Бассейн</label>
+                        <input id="parking-check" type="checkbox" name="parking">
+                        <label for="parking-check">Парковка</label>
+                        <input id="wi-fi-check" type="checkbox" name="wi-fi">
+                        <label for="wi-fi-check">Wi-Fi</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип жилья:</legend>
+                        <input id="hotel-check" type="checkbox" name="hotel" checked>
+                        <label for="hotel-check">Гостиница</label>
+                        <input id="motel-check" type="checkbox" name="motel" checked>
+                        <label for="motel-check">Мотель</label>
+                        <input id="apartments-check" type="checkbox" name="apartments" checked>
+                        <label for="apartments-check">Апартаменты</label>
+                    </fieldset>
+                    <p>
+                        <label for="cost-range">Стоимость в сутки (Р):</label>
+                        от 0<input id="cost-range" type="range" name="cost" min="0" max="3000"> до 3000
+                    </p>
+                    <p>
+                        <button type="submit" value="Показать">Показать</button>
+                    </p>
+                </form>
             </section>
             <section>
                 <p>Найдено:3</p>
                 <p>Сортировка:</p>
                 <ul>
-                    <li>По цене</li>
-                    <li>По типу</li>
-                    <li>По рейтингу</li>
+                    <a href=""><li>По цене</li></a>
+                    <a href=""><li>По типу</li></a>
+                    <a href=""><li>По рейтингу</li></a>
                 </ul>
             </section>
             <section>

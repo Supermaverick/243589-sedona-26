@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url ("ptsans.woff2") format ("woff2"),
+        url ("ptsans.woff") format ("woff"),
+        url ("ptsansbold.woff2") format ("woff2"),
+        url ("ptsansbold.woff") format ("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14 px;
+    line-height: 21 px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Меню */
+
+.main-navigation{
+    line-height: 26 px;
+    color: #000000;
+}
+
+.site-navigation,
+.user-navigation{
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a{
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover{
+    color: rgb(129, 179, 210);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus{
+    color: rgba(0, 0, 0, 0.302);
+}
+
+.main-navigation,
+.search,
+.footer-copyright{
+    text-align: center;
+}
+
+/* Основной блок */
+
+.title h1{
+    font-size: 21 px;
+    line-height: 26 px;
+    text-align: center;
+}
+
+.subtitle{
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: normal;
+    font-size: 14 px;
+}
+
+/* Форма поиска гостиницы */
+
+p.search-title{
+    font-size: 30 px;
+    line-height: 36 px;
+}
+
+a.search-caption{
+    color: #ffffff;
+    background-color: #766357;
+    font-size: 21 px;
+}
+
+a.search-caption:hover{
+    background-color: #604e43;
+}
+
+a.search-caption:focus{
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+form.widget{
+    background-image: url("img/map.png");
+}
+
+.widget input{
+    background-color: #f2f2f2;
+    border: none;
+    text-align: left;
+    color: #000000;
+}
+
+.widget input:hover{
+    background-color: #ebebeb;
+}
+
+.widget input:focus{
+    background-color: #ffffff;
+    border: solid 2px #e5e5e5;
+}
+
+button.control{
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.control a{
+    color: #a9a9a9;
+    font-size: 14 px;
+    font-weight: bold; 
+}
+
+.control a:hover{
+    color: #000000;
+}
+
+.control a:focus{
+    color: #81b3d2;
+}
+
+button.search-button{
+    background-color: #81b3d2;
+    border: none;
+    color: #ffffff;
+}
+
+button.search-button:hover{
+    background-color: #669ec0;
+}
+
+button.search-button:focus{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Футер */
+.typeface{
+    font-size: 21 px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.author{
+    font-weight: normal;
+    font-size: 14 px;
+    line-height: 26 px;
+}
+
+.social-list,
+.social-icon{
+    list-style: none;
+}
+
+.social-icon{
+    width: 46px;
+    height: 48px;
+    text-align: center;
+    background-color: #81b3d2;
+}
+
+.social-icon:hover{
+    background-color: #669ec0;
+}
+
+.social-icon:focus{
+    background-color: #5496bd;
+}
+
+/* Страница Гостиницы */
+
+.page-navigation a{
+    color: #766357;
+}
+
+.list-hotels,
+.item-hotel{
+    list-style: none;
+}
+
+a.subtitle-hotel{
+    font-size: 21 px;
+    line-height: 26 px;
+    color: #000000;
+}
+
+a.subtitle-hotel:hover{
+    color: #81b3d2;
+}
+
+a.subtitle-hotel:focus{
+    color: rgba(0, 0, 0, 0.3)
+}
+
+p.feature-hotel{
+    color: #333333;
+    font-weight: normal;
+    font-size: 14 px;
+    line-height: 21 px; 
+}
+
+/* Кнопка Подробнее */
+
+a.more{
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+a.more:hover{
+    background-color: #669ec0;
+}
+
+a.more:focus{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Кнопка забронировать */
+
+a.button-hotel{
+    background-color: #766357;
+    color: #ffffff;
+}
+
+a.button-hotel:hover{
+    background-color: #604e43;
+}
+
+a.button-hotel:focus{
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/*------*/
+
+p.feature-rating{
+    color: #666666;
+    background-color: #f2f2f2;
+    font-weight: normal;
+}

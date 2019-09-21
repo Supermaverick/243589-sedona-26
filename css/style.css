@@ -70,6 +70,7 @@ a{
     text-align: center;
     font-weight: normal;
     font-size: 14px;
+    line-height: 26px;
 }
 
 /* Форма поиска гостиницы */
@@ -146,6 +147,31 @@ button.search-button:hover{
 button.search-button:focus{
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.widget{
+    position: relative;
+}
+
+.widget input{
+    width: 346px;
+    height: 38px;
+    
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.widget input.calendar::after{
+    content: "";
+    background: url("calendar.svg") no-repeat 100% 100%;
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    width: 21px;
 }
 
 /* Футер */

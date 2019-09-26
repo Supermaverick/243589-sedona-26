@@ -102,9 +102,9 @@ h2.search-caption{
 /* Основной блок */
 
 .background-photo{
-    position: absolute;
     top: 0px;
     z-index: 1;
+    margin-top: -56px;
 }
 
 .header-section{

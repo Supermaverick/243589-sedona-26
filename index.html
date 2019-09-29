@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="main-container">
         <header class="header-section">
             <nav class="main-navigation">
                 <a><img class="main-header-logo" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны"></a>
@@ -23,21 +24,22 @@
             </nav>
         </header>
         <main>
-            <img class="background-photo" src="img/intro.jpg" width="1200" height="780" alt="Добро пожаловать в Седону">
+            <img class="background-photo" src="img/intro.jpg" width="1200px" height="773px" alt="Добро пожаловать в Седону">
             <section class="title">
                 <h1>Седона - небольшой городок в Аризоне,<br>
                     заслуживающий большего!</h1>
                 <p class="subtitle subtitle-top">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </section>
-                <section class="section-city">
+            <section class="section-natural-city">
+                <div class="section-city">
                     <h2>Настоящий<br> городок</h2>
                     <p class="sign">&#8212; №1 &#8212;</p>
                     <p class="sign">Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
-                </section>
+                </div>
                 <img class="pictute-1" src="img/feature-picture.jpg" width="800" height="256" alt="Архитектура Седоны">
-            
+            </section>
             <section class="advantages-1">
-                <ul>
+                <ul class="section-adventages-1">
                     <li>
                         <h3>Жильё</h3>
                         <p class="subtitle">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
@@ -52,16 +54,16 @@
                     </li>
                 </ul>
             </section>
-            <section class="section-place">
-                 <div>
+            <section class="section-bridge">
+                <img src="img/layer-5.jpg" width="800" height="256" alt="Мост Дьявола"> 
+                <div class="section-place">
                     <h2>Там есть<br> мость Дьявола</h2>
                     <p class="sign">&#8212; №2 &#8212;</p>
                     <p class="sign">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
                 </div>
             </section>
-                <img src="img/layer-5.jpg" width="800" height="256" alt="Мост Дьявола"> 
             <section class="advantages-2">
-                <ul>
+                <ul class="list-advantages">
                     <li>
                         <h3>Небольшая<br> площадка</h3>
                         <p class="sign">&#8212; №3 &#8212;</p>
@@ -84,6 +86,7 @@
                 <p class="subtitle">Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     <h2 class="search-caption">Поиск гостиницы в Седоне</h2>
+                    <div class="background-form">
                     <form class="widget" action="https://echo.htmlacademy.ru" method="get">
                         <p class="calendar">
                             <label for="data-arrival">Дата заезда:</label>
@@ -109,6 +112,7 @@
                             <button class="search-button" type="submit" value="Найти">Найти</button>
                         </p>
                     </form>
+                    </div>
             </section>
         </main>
         <footer class="footer-section">
@@ -127,5 +131,6 @@
             <a class="author-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
             </div>
         </footer>
+        </div>
     </body>
 </html>

@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     padding: 0;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #000000;
@@ -31,6 +31,7 @@ a{
 
 .main-container{
     margin: 0 auto;
+    width: 1200px;
 }
 
 /* Меню */
@@ -122,6 +123,7 @@ h2.search-caption{
     top: 0px;
     z-index: 1;
     margin-top: -56px;
+    display: block;
 }
 
 .header-section{
@@ -141,7 +143,6 @@ h2.search-caption{
     z-index: 3;
     display: flex;
     flex-direction: column;
-    min-height: 216px;
     width: 1200px;
     align-items: center;
 }
@@ -160,12 +161,21 @@ h2.search-caption{
     line-height: 26px;
 }
 
+.subtitle-adventages-1{
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.subtitle-top{
+    margin-bottom: 41px;
+}
+
 .section-natural-city,
 .section-bridge{
     display: flex;
     flex-direction: row;
     width: 1200px;
-    justify-content: flex-start;
+    margin-top: 0px;
 }
 
 .section-city,
@@ -173,10 +183,20 @@ h2.search-caption{
     background-color: #81b3d2;
     width: 400px;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .sign{
     font-weight: normal;
+    text-align: center;
+}
+
+.section-city h2,
+.section-place h2{
     text-align: center;
 }
 
@@ -200,6 +220,22 @@ h2.search-caption{
     padding-left: 0px;
 }
 
+.list-advantages h3{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.sign-advantages-1{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sign-advantages{
+    margin: 0 auto;
+    margin-bottom: 63px;
+}
+
 .section-adventages-1{
     display: flex;
     flex-wrap: wrap;
@@ -210,10 +246,28 @@ h2.search-caption{
     margin: 0 auto;
 }
 
+.section-adventages-1 li{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.list-advantages li{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
 /* Форма поиска гостиницы */
 
 .background-form{
-    background-image: url("img/map.png");
+    background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-position: left top;
     width: 1200px;
@@ -233,7 +287,7 @@ h2.search-caption{
     padding-top: 35px;
     padding-bottom: 33px;
     width: 568px;
-    margin-left: 316px;
+    margin: 0 auto;
 
 }
 
@@ -249,6 +303,7 @@ h2.search-caption:focus{
 form.widget{
     box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
     width: 568px;
+    background-color: #ffffff;
     padding-top: 55px;
     padding-bottom: 55px;
     margin: 0 auto;
@@ -304,7 +359,6 @@ button.search-button{
     text-transform: uppercase;
 
     width: 458px;
-    height: 58px;
 }
 
 button.search-button:hover{
@@ -350,7 +404,6 @@ p.calendar::after{
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
-    min-height: 120px;
 }
 
 .footer-copyright,
@@ -616,7 +669,6 @@ input#min-value{
 
 .submit-show{
     width: 133px;
-    height: 32px;
     border: solid 2px #ffffff;
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
@@ -655,7 +707,6 @@ p.assortment-selection{
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     text-decoration: none;
     display: inline-block;
-    height: 1.2em;
     line-height: 1.05em;
 }
 

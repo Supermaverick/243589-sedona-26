@@ -154,13 +154,6 @@ h2.search-caption{
     text-align: center;
 }
 
-.subtitle{
-    color: rgb(51, 51, 51);
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-}
-
 .subtitle-adventages-1{
     margin-bottom: 80px;
     text-align: center;
@@ -271,11 +264,48 @@ h2.search-caption{
     background-repeat: no-repeat;
     background-position: left top;
     width: 1200px;
+    height: 473px;
 }
 
-p.search-title{
+.search-section{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    padding-top: 57px;
+    padding-bottom: 52px;
+    margin: 0 auto;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+
+.search-title{
     font-size: 30px;
     line-height: 36px;
+    width: 434px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.search-subtitle{
+    width: 434px;
+    margin: 0 auto;
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.subtitle{
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 h2.search-caption{
@@ -300,27 +330,6 @@ h2.search-caption:focus{
     color: rgba(255, 255, 255, 0.3);
 }
 
-form.widget{
-    box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
-    width: 568px;
-    background-color: #ffffff;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    margin: 0 auto;
-}
-
-.widget label{
-    text-align: left;
-    padding-left: 55px;
-}
-
-.widget input{
-    background-color: #f2f2f2;
-    border: none;
-    text-align: left;
-    color: #000000;
-}
-
 .widget input:hover{
     background-color: #ebebeb;
 }
@@ -330,15 +339,12 @@ form.widget{
     border: solid 2px #e5e5e5;
 }
 
-button.control{
-    border: none;
-    background-color: #f2f2f2;
-}
-
 .control a{
     color: #a9a9a9;
     font-size: 14px;
     font-weight: bold; 
+    padding: 0px;
+    margin: 0 auto;
 }
 
 .control a:hover{
@@ -349,7 +355,7 @@ button.control{
     color: #81b3d2;
 }
 
-button.search-button{
+.search-button{
     background-color: #81b3d2;
     border: none;
     color: #ffffff;
@@ -359,36 +365,73 @@ button.search-button{
     text-transform: uppercase;
 
     width: 458px;
+    margin-bottom: 55px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    align-self: center;
+
 }
 
-button.search-button:hover{
+.search-button:hover{
     background-color: #669ec0;
 }
 
-button.search-button:focus{
+.search-button:focus{
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
 }
 
 .widget{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 568px;
+    margin: 0 auto;
+    margin-bottom: 78px;
+
+    box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+    background-color: #ffffff;
 }
 
 .widget input{
-    width: 346px;
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-left: 12px;
-    
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    border: none;
 }
 
-p.calendar::after{
+.calendar input{
+    width: 333px;
+    padding-left: 13px;
+}
+
+.data-arrival{
+    margin-top: 55px;
+    margin-bottom: 29px;
+}
+
+.data-departure{
+    margin-bottom: 30px;
+}
+
+.calendar{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.calendar label{
+    width: 112px;
+    margin: 0;
+    padding-left: 55px;
+    align-self: center;
+}
+
+.calendar::after{
     content: "";
     background: url("../img/calendar.svg") no-repeat 100% 100%;
     position: absolute;
@@ -397,42 +440,96 @@ p.calendar::after{
     width: 21px;
 }
 
+.people-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+    margin-right: 55px;
+    width: 513px;
+}
+
+.adults-section{
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control{
+    width: 38px;
+    padding: 0px;
+    margin: 0 auto;
+    border: none;
+    background-color: #f2f2f2;
+
+}
+
+.people-section input{
+    width: 38px;
+}
+
+.adults-section label{
+    align-self: center;
+    width: 112px;
+    padding-left: 55px;
+}
+
+.adults-button,
+.child-button{
+    display: flex;
+    justify-content: space-between;
+    width: 114px;
+    margin: 0 auto;
+}
+
+.child-section{
+    width: 232px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.child-section label{
+    width: 65x;
+    align-self: center;
+    padding-left: 53px;
+}
+
+.child-button input,
+.adults-button input{
+    text-align: center;
+}
+
 /* Футер */
 
 .footer-section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width: 1200px;
-}
-
-.footer-copyright,
-.social,
-.footer-author{
-    margin: auto;
+    margin: 0 auto;
 }
 
 .typeface{
     font-size: 21px;
     line-height: 26px;
     color: #000000;
-}
 
-.author{
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-}
-
-.social-list,
-.social-icon{
-    list-style: none;
+    display: block;
+    width: 400px;
+    margin: 0px;
+    text-align: center;
 }
 
 .social-list{
+    list-style: none;
+    padding-left: 0px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    width: 400px;
 }
 
 .social-icon-tw,
@@ -457,13 +554,20 @@ p.calendar::after{
 
 .footer-author{
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    width: 400px;
 }
 
 .author{
-    margin: auto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
     margin-right: 8px;
+}
+
+.author-logo img{
+    display: block;
 }
 
 /* Страница Гостиницы */

@@ -478,7 +478,6 @@ h2.search-caption:focus{
     display: flex;
     justify-content: space-between;
     width: 114px;
-    margin: 0 auto;
 }
 
 .child-section{

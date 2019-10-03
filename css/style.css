@@ -739,14 +739,68 @@ a.button-hotel:focus{
 }
 
 /* Форма "Показать гостиницы" на странице Гостиницы */
-.search-form-hotel{
+.search-form{
     background-color: #5496bd;
     color: #ffffff;
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 1200px;
+    top: 0px;
+    margin-top: -56px;
+    display: block;
+}
+
+.search-form-hotel{
+    display: flex;
+    justify-content: space-between;
+    width: 1056px;
+    margin: 0 auto;
 }
 
 .search-form-hotel fieldset{
     border: none;
-    padding-left: 72px;
+    margin-top: 87px;
+}
+
+.options-section,
+.apartment-section{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 31px;
+}
+
+.options-section{
+    margin-right: 14px;
+}
+
+.apartment-section{
+    margin-right: 230px;
+}
+
+.pool-check,
+.hotel-check{
+    margin-top: 31px;
+    display: flex;
+    align-content: center;
+}
+
+.parking-check,
+.wi-fi-check,
+.motel-check,
+.apartments-check{
+    margin-top: 36px;
+    display: flex;
+    align-content: center;
+}
+
+.search-form-hotel input{
+    width: 23px;
+    height: 23px;
+    margin-right: 17px;
 }
 
 .search-form-hotel label{
@@ -756,11 +810,26 @@ a.button-hotel:focus{
 .search-form-hotel legend{
     font-size: 16px;
     line-height: 21px;
-    padding-top: 28px;
 }
 
-.text-check{
-    font-weight: normal;
+.cost-section{
+    width: 318px;
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 32px;
+}
+
+.cost-area{
+    width: 318px;
+}
+
+.number-section{
+    border: 2px solid #ffffff;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    width: 314px;
 }
 
 input#max-value,
@@ -768,7 +837,66 @@ input#min-value{
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
-    padding-left: 5px;  
+    padding: 0px;
+    align-self: center;
+    margin-right: 0px;
+    margin-left: 6px;
+}
+
+.value{
+    width: 314px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 29px;
+}
+
+.vertikal-line{
+    width: 2px;
+    height: 22px;
+    background-color: #ffffff;
+    align-self: center;
+}
+
+.text-check-1,
+.text-check-2{
+    font-weight: normal;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.contour-white{
+    background-color: #ffffff;
+    width: 248px;
+    height: 2px;
+    margin-top: 22px;
+}
+
+.contour-grey{
+    background-color: rgba(0, 1, 1, 0.2);
+    width: 317px;
+    height: 2px;
+    position: absolute;
+}
+
+.button-right{
+    position: absolute;
+    left: 1079px;
+    top: 176px;
+    width: 20px;
+    height: 22px;  
+}
+
+.button-left{
+    position: absolute;
+    left: 832px;
+    top: 176px;
+    width: 20px;
+    height: 22px;
 }
 
 .submit-show{
@@ -777,6 +905,11 @@ input#min-value{
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     color: white;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 35px;
+    padding-right: 33px;
+    margin-left: 85px;
 }
 
 /*-------------*/
@@ -786,49 +919,67 @@ input#min-value{
 .assortment{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: white;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 72px;
+    padding-top: 31px;
+    padding-bottom: 33px;
 }
 
-p.search-assortment{
+.search-assortment{
     font-size: 21px;
     line-height: 26px;
+    margin: 0px;
+    width: 135px;
 }
 
-p.assortment-selection{
+.assortment-selection{
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.selections{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
 }
 
 .selections li{
     list-style: none;
+}
+
+.selections li:first-child,
+.selections li:nth-child(2){
+    margin-right: 33px;
+}
+
+.selections a{
     color: rgba(0, 0, 0, 0.3);
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
-}
-
-.assortment a{
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     text-decoration: none;
-    display: inline-block;
-    line-height: 1.05em;
 }
 
-.assortment a:hover{
+.selections a:hover{
     border-bottom: 1px dotted #81b3d2;
-}
-
-.assortment a:focus{
-    border-bottom: none;
-}
-
-.selections li:hover{
     color: #81b3d2;
 }
 
-.selections li:focus{
+.selections a:focus{
+    border-bottom: none;
     color: #000000;
 }
 
+.focus-selection{
+    color: #81b3d2;
+    border-bottom: none;
+}
 
 /*-------------*/

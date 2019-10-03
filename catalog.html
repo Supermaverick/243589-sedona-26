@@ -27,44 +27,62 @@
             <h1 class="hotels-title">Поиск гостиниц в Седоне</h1>
             <section class="search-form">
                 <form class="search-form-hotel" action="https://echo.htmlacademy.ru" method="get">
-                    <fieldset>
+                    <fieldset class="options-section">
                         <legend>Инфраструктура:</legend>
+                        <div class="pool-check">
                         <input id="pool-check" type="checkbox" name="pool" checked>
                         <label for="pool-check">Бассейн</label>
+                        </div>
+                        <div class="parking-check">
                         <input id="parking-check" type="checkbox" name="parking">
                         <label for="parking-check">Парковка</label>
+                        </div>
+                        <div class="wi-fi-check">
                         <input id="wi-fi-check" type="checkbox" name="wi-fi">
                         <label for="wi-fi-check">Wi-Fi</label>
+                        </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="apartment-section">
                         <legend>Тип жилья:</legend>
+                        <div class="hotel-check">
                         <input id="hotel-check" type="checkbox" name="hotel" checked>
                         <label for="hotel-check">Гостиница</label>
+                        </div>
+                        <div class="motel-check">
                         <input id="motel-check" type="checkbox" name="motel" checked>
                         <label for="motel-check">Мотель</label>
+                        </div>
+                        <div class="apartments-check">
                         <input id="apartments-check" type="checkbox" name="apartments" checked>
                         <label for="apartments-check">Апартаменты</label>
+                        </div>
                     </fieldset>
-                    <fieldset>
+                    <div class="cost-area">
+                    <fieldset class="cost-section">
                         <legend>Стоимость в сутки (Р):</legend>
-                        <span class="text-check">От</span><input type="number" id="min-value" name="min-value" min="0" max="3000" value="0">
-                        <button type="button"></button>
-                        <div><!--Здесь будет ползунок--></div>
-                        <span class="text-check">До</span><input type="number" id="max-value" name="max-value" min="0" max="3000" value="3000">
-                        <button type="button"></button>
+                        <div class="value">
+                        <span class="text-check-1">От<input type="number" id="min-value" name="min-value" min="0" max="3000" value="0"></span>
+                        <span class="vertikal-line"><!--Здесь вертикальная линия--></span>
+                        <span class="text-check-2">До<input type="number" id="max-value" name="max-value" min="0" max="3000" value="3000"></span>
+                        </div>
+                        <div class="radio-section">
+                        <div class="contour-grey"><!--Здесь серый ползунок--></div>
+                        <div class="contour-white"><!--Здесь белый ползунок--></div>
+                        <button class="button-left" type="button"></button>
+                        <button class="button-right" type="button"></button>
+                        </div>
                     </fieldset>
-                    <p>
                         <button class="submit-show" type="submit" value="Показать">Показать</button>
-                    </p>
+                    </div>
                 </form>
             </section>
             <section class="assortment">
                 <p class="search-assortment">Найдено:3</p>
                 <p class="assortment-selection">Сортировка:</p>
                 <ul class="selections">
-                    <a href=""><li>По цене</li></a>
-                    <a href=""><li>По типу</li></a>
-                    <a href=""><li>По рейтингу</li></a>
+                    <li><a class="focus-selection" href="">По цене</a></li>
+                    <li><a href="">По типу</a></li>
+                    <li><a href="">По рейтингу</a></li>
                 </ul>
             </section>
             <section class="section-hotels">

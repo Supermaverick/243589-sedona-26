@@ -4,7 +4,7 @@
         url ("ptsans.woff") format ("woff"),
         url ("ptsansbold.woff2") format ("woff2"),
         url ("ptsansbold.woff") format ("woff");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -20,7 +20,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: #000000;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     max-width: 1200px;
 }
@@ -60,9 +60,7 @@ img{
 .main-navigation{
     line-height: 26px;
     color: #000000;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 1056px;
 }
 
@@ -87,7 +85,6 @@ img{
 
 .site-navigation{
     display: flex;
-    flex-direction: row; 
     flex-wrap: wrap;
     margin: 0 auto;
     padding-left: 0px;
@@ -95,32 +92,31 @@ img{
 
 .navigation-section-1{
     display: flex;
+    flex-wrap: wrap;
     width: 480px;
-    flex-direction: row;
     align-self: flex-start;
     margin-right: 48px;
 }
 
 .navigation-section-2{
     display: flex;
-    width: 480px;
-    flex-direction: row;
     align-self: flex-end;
+    flex-wrap: wrap;
+    width: 480px;
     margin-left: 48px;
 }
 
 .navigation-section-1 li{
     width: 240px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .navigation-section-2 li{
     width: 240px;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .site-navigation a:hover,
@@ -151,9 +147,9 @@ h2.search-caption{
     position: relative;
     z-index: 2;
     display: flex;
-    flex-direction: row;
-    width: 1200px;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -187,7 +183,7 @@ h2.search-caption{
 .section-natural-city,
 .section-bridge{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     width: 1200px;
     margin-top: 0px;
 }
@@ -205,7 +201,7 @@ h2.search-caption{
 }
 
 .sign{
-    font-weight: normal;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -226,7 +222,6 @@ h2.search-caption{
 
 .list-advantages{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1200px;
@@ -253,7 +248,6 @@ h2.search-caption{
 .section-adventages-1{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
     width: 1200px;
     padding-left: 0px;
@@ -290,6 +284,7 @@ h2.search-caption{
 
 .search-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 1200px;
     padding-top: 57px;
@@ -317,14 +312,14 @@ h2.search-caption{
     width: 434px;
     margin: 0 auto;
     color: rgb(51, 51, 51);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
 }
 
 .subtitle{
     color: rgb(51, 51, 51);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 26px;
 }
@@ -364,7 +359,7 @@ h2.search-caption{
 .control a{
     color: #a9a9a9;
     font-size: 14px;
-    font-weight: bold; 
+    font-weight: 700; 
     padding: 0px;
     margin: 0 auto;
     width: 12px;
@@ -385,7 +380,7 @@ h2.search-caption{
     color: #ffffff;
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 
     width: 458px;
@@ -422,7 +417,7 @@ h2.search-caption{
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 
     background-color: #f2f2f2;
@@ -445,7 +440,7 @@ h2.search-caption{
 
 .calendar{
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .calendar label{
@@ -486,6 +481,7 @@ h2.search-caption{
 .people-section{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 54px;
     margin-right: 55px;
     width: 513px;
@@ -495,6 +491,7 @@ h2.search-caption{
     width: 281px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .control{
@@ -520,6 +517,7 @@ h2.search-caption{
 .child-button{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 114px;
 }
 
@@ -527,6 +525,7 @@ h2.search-caption{
     width: 232px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -547,6 +546,7 @@ h2.search-caption{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 1200px;
     margin: 0 auto;
 }
@@ -566,6 +566,7 @@ h2.search-caption{
     width: 400px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-list{
@@ -589,6 +590,7 @@ h2.search-caption{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .social-icon:hover{
@@ -611,11 +613,12 @@ h2.search-caption{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 400px;
 }
 
 .author{
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     margin-right: 8px;
@@ -644,6 +647,7 @@ h2.search-caption{
 .list-hotels-3{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 0px;
 }
 
@@ -677,7 +681,7 @@ a.subtitle-hotel:focus{
 
 li.feature-hotel{
     color: #333333;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px; 
 }
@@ -718,8 +722,8 @@ li.feature-hotel{
     margin: 0px;
     width: 258px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .section-hotels img{
@@ -782,7 +786,7 @@ li.feature-hotel{
 .feature-rating-3{
     color: #666666;
     background-color: #f2f2f2;
-    font-weight: normal;
+    font-weight: 400;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-right: 13px;
@@ -805,6 +809,7 @@ li.feature-hotel{
 
 .search-form-hotel{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1056px;
     margin: 0 auto;
@@ -837,6 +842,7 @@ li.feature-hotel{
 .hotel-check{
     margin-top: 31px;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
 }
 
@@ -846,6 +852,7 @@ li.feature-hotel{
 .apartments-check{
     margin-top: 36px;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
 }
 
@@ -856,7 +863,7 @@ li.feature-hotel{
 }
 
 .search-form-hotel label{
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .search-form-hotel legend{
@@ -880,6 +887,7 @@ li.feature-hotel{
     border: 2px solid #ffffff;
     margin-top: 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 314px;
 }
@@ -899,6 +907,7 @@ input#min-value{
     width: 314px;
     border: 2px solid #ffffff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     margin-top: 29px;
@@ -913,9 +922,10 @@ input#min-value{
 
 .text-check-1,
 .text-check-2{
-    font-weight: normal;
+    font-weight: 400;
     width: 120px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     align-self: center;
@@ -989,6 +999,7 @@ input#min-value{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 72px;
     padding-top: 31px;
     padding-bottom: 33px;
@@ -1004,7 +1015,7 @@ input#min-value{
 .assortment-selection{
     font-size: 12px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 400;
     margin: 0px;
     margin-left: 30px;
     margin-right: 40px;
@@ -1014,6 +1025,7 @@ input#min-value{
     margin: 0px;
     padding: 0px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .selections li{
@@ -1029,7 +1041,7 @@ input#min-value{
     color: rgba(0, 0, 0, 0.3);
     font-size: 12px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 400;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     text-decoration: none;
 }

@@ -34,6 +34,27 @@ a{
     width: 1200px;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active){
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
 /* Меню */
 
 .main-navigation{
@@ -431,13 +452,23 @@ h2.search-caption:focus{
     align-self: center;
 }
 
-.calendar::after{
-    content: "";
-    background: url("../img/calendar.svg") no-repeat 100% 100%;
+.calendar-icon-arrival,
+.calendar-icon-departure{
+    background-image: url("../img/calendar.svg");
     position: absolute;
-    right: 9px;
-    top: 8px;
+    background-repeat: no-repeat;
     width: 21px;
+    height: 22px;
+}
+
+.calendar-icon-arrival{
+    right: 59px;
+    top: 58px;
+}
+
+.calendar-icon-departure{
+    right: 59px;
+    top: 114px;
 }
 
 .people-section{
@@ -570,10 +601,6 @@ h2.search-caption:focus{
 }
 
 /* Страница Гостиницы */
-
-.hotels-title{
-    display: none;
-}
 
 .page-navigation a{
     color: #766357;
@@ -872,20 +899,28 @@ input#min-value{
     position: absolute;
 }
 
+.button-left,
+.button-right{
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;    
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+    padding: 2px;
+}
+
 .button-right{
     position: absolute;
     left: 1079px;
-    top: 176px;
-    width: 20px;
-    height: 22px;  
+    top: 176px;    
 }
 
 .button-left{
     position: absolute;
     left: 832px;
     top: 176px;
-    width: 20px;
-    height: 22px;
 }
 
 .submit-show{

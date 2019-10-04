@@ -329,7 +329,7 @@ h2.search-caption{
     line-height: 26px;
 }
 
-h2.search-caption{
+.search-caption h2{
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
@@ -338,15 +338,16 @@ h2.search-caption{
     padding-top: 35px;
     padding-bottom: 33px;
     width: 568px;
+    text-align: center;
     margin: 0 auto;
 
 }
 
-h2.search-caption:hover{
+.search-caption h2:hover{
     background-color: #604e43;
 }
 
-h2.search-caption:focus{
+.search-caption h2:focus{
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -366,6 +367,8 @@ h2.search-caption:focus{
     font-weight: bold; 
     padding: 0px;
     margin: 0 auto;
+    width: 12px;
+    height: 3px;
 }
 
 .control a:hover{
@@ -454,11 +457,20 @@ h2.search-caption:focus{
 
 .calendar-icon-arrival,
 .calendar-icon-departure{
-    background-image: url("../img/calendar.svg");
     position: absolute;
     background-repeat: no-repeat;
     width: 21px;
     height: 22px;
+}
+
+.calendar-icon-arrival:hover path,
+.calendar-icon-departure:hover path{
+    fill: #000000;
+}
+
+.calendar-icon-arrival:focus path,
+.calendar-icon-departure:focus path{
+    fill: #81b3d2;
 }
 
 .calendar-icon-arrival{
@@ -550,28 +562,33 @@ h2.search-caption:focus{
     text-align: center;
 }
 
+.social{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
 .social-list{
     list-style: none;
     padding-left: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 36px;
     padding-bottom: 36px;
-    width: 400px;
-}
-
-.social-icon-tw,
-.social-icon-fb{
-    margin-right: 6px;
+    width: 150px;
 }
 
 .social-icon{
     width: 46px;
     min-height: 48px;
-    text-align: center;
     background-color: #81b3d2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icon:hover{
@@ -580,6 +597,14 @@ h2.search-caption:focus{
 
 .social-icon:focus{
     background-color: #5496bd;
+}
+
+.social-icon a:focus path{
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.social-icon a{
+    display: block;
 }
 
 .footer-author{
@@ -596,8 +621,16 @@ h2.search-caption:focus{
     margin-right: 8px;
 }
 
-.author-logo img{
+.author-logo{
     display: block;
+}
+
+.author-logo:hover path{
+    fill: #81b3d2;
+}
+
+.author-logo:focus path{
+    fill: #bdbbbc;
 }
 
 /* Страница Гостиницы */
@@ -656,6 +689,7 @@ li.feature-hotel{
     margin-left: 522px;
     display: flex;
     align-content: space-between;
+    position: relative;
 }
 
 .review-hotel-1,
@@ -743,7 +777,9 @@ li.feature-hotel{
 
 /*------*/
 
-.feature-rating{
+.feature-rating-1,
+.feature-rating-2,
+.feature-rating-3{
     color: #666666;
     background-color: #f2f2f2;
     font-weight: normal;
@@ -911,16 +947,25 @@ input#min-value{
     padding: 2px;
 }
 
+.button-left:hover,
+.button-right:hover{
+    border: 10px solid #ffffff;
+}
+
+.radio-section{
+    position: relative;
+}
+
 .button-right{
     position: absolute;
-    left: 1079px;
-    top: 176px;    
+    right: 60px;
+    top: -9px;    
 }
 
 .button-left{
     position: absolute;
-    left: 832px;
-    top: 176px;
+    left: -10px;
+    top: -9px;
 }
 
 .submit-show{
@@ -944,8 +989,6 @@ input#min-value{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: white;
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
     padding-left: 72px;
     padding-top: 31px;
     padding-bottom: 33px;
@@ -1007,3 +1050,44 @@ input#min-value{
 }
 
 /*-------------*/
+
+/*-- Звездочки рейтинга --*/
+
+.feature-rating-1::before{
+    content: "";
+    background-image: url("../img/star.png");
+    background-repeat: repeat;
+    position: absolute;
+    width: 72px;
+    height: 17px;
+    top: 0px;
+    right: 0px;
+}
+
+.feature-rating-2::before{
+    content: "";
+    background-image: url("../img/star.png");
+    background-repeat: repeat;
+    position: absolute;
+    width: 54px;
+    height: 17px;
+    top: 0px;
+    right: 0px;
+}
+
+.feature-rating-3::before{
+    content: "";
+    background-image: url("../img/star.png");
+    background-repeat: repeat;
+    position: absolute;
+    width: 36px;
+    height: 17px;
+    top: 0px;
+    right: 0px;
+}
+
+/*-- Иконки на главной --*/
+.assets-icon-1::before{
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+}

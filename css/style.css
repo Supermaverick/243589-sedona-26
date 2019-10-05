@@ -130,7 +130,7 @@ img{
 }
 
 .search,
-h2.search-caption{
+.search-caption{
     text-align: center;
 }
 
@@ -324,7 +324,7 @@ h2.search-caption{
     line-height: 26px;
 }
 
-.search-caption h2{
+.search-caption{
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
@@ -335,14 +335,14 @@ h2.search-caption{
     width: 568px;
     text-align: center;
     margin: 0 auto;
-
+    display: block;
 }
 
-.search-caption h2:hover{
+.search-caption:hover{
     background-color: #604e43;
 }
 
-.search-caption h2:focus{
+.search-caption:focus{
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -1068,9 +1068,9 @@ input#min-value{
 .feature-rating-1::before{
     content: "";
     background-image: url("../img/star.png");
-    background-repeat: repeat;
+    background-repeat: space;
     position: absolute;
-    width: 72px;
+    width: 89px;
     height: 17px;
     top: 0px;
     right: 0px;
@@ -1079,9 +1079,9 @@ input#min-value{
 .feature-rating-2::before{
     content: "";
     background-image: url("../img/star.png");
-    background-repeat: repeat;
+    background-repeat: space;
     position: absolute;
-    width: 54px;
+    width: 65px;
     height: 17px;
     top: 0px;
     right: 0px;
@@ -1090,9 +1090,9 @@ input#min-value{
 .feature-rating-3::before{
     content: "";
     background-image: url("../img/star.png");
-    background-repeat: repeat;
+    background-repeat: space;
     position: absolute;
-    width: 36px;
+    width: 41px;
     height: 17px;
     top: 0px;
     right: 0px;
@@ -1100,6 +1100,47 @@ input#min-value{
 
 /*-- Иконки на главной --*/
 .assets-icon-1::before{
+    content: "";
     background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
+    background-position: 0 3px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 36px;
+    width: 75px;
+    height: 74px;
+}
+
+.assets-icon-2::before{
+    content: "";
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 62px;
+    margin-bottom: 34px;
+    width: 74px;
+    height: 74px;
+}
+
+.assets-icon-3::before{
+    content: "";
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 36px;
+    width: 64px;
+    height: 78px;
+}
+
+
+.assets-icon-1,
+.assets-icon-2,
+.assets-icon-3{
+    margin: 0;
 }

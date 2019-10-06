@@ -142,15 +142,12 @@ img{
 /* Основной блок */
 
 .background-photo{
-    top: 0px;
-    z-index: 1;
     margin-top: -56px;
     display: block;
 }
 
 .header-section{
     position: relative;
-    z-index: 2;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -162,7 +159,6 @@ img{
 .title{
     position: absolute;
     top: 564px;
-    z-index: 3;
     display: flex;
     flex-direction: column;
     width: 1200px;
@@ -182,7 +178,7 @@ img{
 }
 
 .subtitle-top{
-    margin-bottom: 41px;
+    margin-bottom: 48px;
 }
 
 .section-natural-city,
@@ -295,6 +291,10 @@ img{
     padding-top: 57px;
     padding-bottom: 52px;
     margin: 0 auto;
+}
+
+.search-caption-title{
+    margin: 0;
 }
 
 .search{

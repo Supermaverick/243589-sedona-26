@@ -129,6 +129,11 @@ img{
     color: rgba(0, 0, 0, 0.302);
 }
 
+.site-navigation a:active,
+.user-navigation a:active{
+    color: #766357;
+}
+
 .search,
 .search-caption{
     text-align: center;
@@ -983,12 +988,17 @@ input#min-value{
     border: solid 2px #ffffff;
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 35px;
     padding-right: 33px;
     margin-left: 85px;
+}
+
+.submit-show:hover{
+    color: #000000;
+    background-color: #ffffff;
 }
 
 /*-------------*/
@@ -999,10 +1009,19 @@ input#min-value{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: white;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 1055px;
     padding-left: 72px;
     padding-top: 31px;
     padding-bottom: 33px;
+}
+
+.selection-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 0;
 }
 
 .search-assortment{
@@ -1016,9 +1035,10 @@ input#min-value{
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    margin: 0px;
+    margin: 0;
     margin-left: 30px;
     margin-right: 40px;
+    padding-top: 9px;
 }
 
 .selections{
@@ -1044,6 +1064,8 @@ input#min-value{
     font-weight: 400;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     text-decoration: none;
+    display: block;
+    margin-top: 8px;
 }
 
 .selections a:hover{
@@ -1056,12 +1078,42 @@ input#min-value{
     color: #000000;
 }
 
-.focus-selection{
+.selections a:active{
     color: #81b3d2;
     border-bottom: none;
 }
 
-/*-------------*/
+.focus-selection a{
+    color: #81b3d2;
+    border-bottom: none;
+}
+
+/*-- Иконки сортировки (треугольники) --*/
+
+.formation{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 34px;
+    margin: 0;
+    padding: 0;
+}
+
+.formation-item path{
+    fill: #cacaca;
+}
+
+.down-active path{
+    fill: #81b3d2;
+}
+
+.formation-item:hover path{
+    fill: #000000;
+}
+
+.formation-item:focus path{
+    fill: #81b3d2;
+}
 
 /*-- Звездочки рейтинга --*/
 
@@ -1144,3 +1196,33 @@ input#min-value{
 .assets-icon-3{
     margin: 0;
 }
+
+/*-- ОФормление чекбоксов в форме --*/
+.checkbox-on{
+    cursor: pointer;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 27px;
+    height: 23px;
+    margin-right: 13px;
+}
+
+.checkbox-off{
+    cursor: pointer;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 23px;
+    height: 23px;
+    margin-right: 17px;
+}
+
+.checkbox-on:disabled{
+    background-image: url("../img/checkbox-on-2.png"); 
+}
+
+.checkbox-off:disabled{
+    background-image: url("../img/checkbox-off-3.png");
+}
+

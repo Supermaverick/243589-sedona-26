@@ -30,30 +30,36 @@
                     <fieldset class="options-section">
                         <legend>Инфраструктура:</legend>
                         <div class="pool-check">
-                        <input id="pool-check" type="checkbox" name="pool" checked>
+                        <input id="pool-check" type="checkbox" name="pool" checked class="visually-hidden">
+                        <span class="checkbox-on"></span>
                         <label for="pool-check">Бассейн</label>
                         </div>
                         <div class="parking-check">
-                        <input id="parking-check" type="checkbox" name="parking">
+                        <input id="parking-check" type="checkbox" name="parking" class="visually-hidden">
+                        <span class="checkbox-off"></span>
                         <label for="parking-check">Парковка</label>
                         </div>
                         <div class="wi-fi-check">
-                        <input id="wi-fi-check" type="checkbox" name="wi-fi">
+                        <input id="wi-fi-check" type="checkbox" name="wi-fi" class="visually-hidden">
+                        <span class="checkbox-off"></span>
                         <label for="wi-fi-check">Wi-Fi</label>
                         </div>
                     </fieldset>
                     <fieldset class="apartment-section">
                         <legend>Тип жилья:</legend>
                         <div class="hotel-check">
-                        <input id="hotel-check" type="checkbox" name="hotel" checked>
+                        <input id="hotel-check" type="checkbox" name="hotel" checked class="visually-hidden">
+                        <span class="checkbox-on"></span>
                         <label for="hotel-check">Гостиница</label>
                         </div>
                         <div class="motel-check">
-                        <input id="motel-check" type="checkbox" name="motel" checked>
+                        <input id="motel-check" type="checkbox" name="motel" checked class="visually-hidden">
+                        <span class="checkbox-on"></span>
                         <label for="motel-check">Мотель</label>
                         </div>
                         <div class="apartments-check">
-                        <input id="apartments-check" type="checkbox" name="apartments" checked>
+                        <input id="apartments-check" type="checkbox" name="apartments" checked class="visually-hidden">
+                        <span class="checkbox-on"></span>
                         <label for="apartments-check">Апартаменты</label>
                         </div>
                     </fieldset>
@@ -77,12 +83,28 @@
                 </form>
             </section>
             <section class="assortment">
+                <div class="selection-list">
                 <p class="search-assortment">Найдено:3</p>
                 <p class="assortment-selection">Сортировка:</p>
                 <ul class="selections">
-                    <li><a class="focus-selection" href="">По цене</a></li>
+                    <li class="focus-selection"><a href="">По цене</a></li>
                     <li><a href="">По типу</a></li>
                     <li><a href="">По рейтингу</a></li>
+                </ul>
+                </div>
+                <ul class="formation"> 
+                    <li class="formation-item">
+                        <span class="visually-hidden">По возрастанию</span>
+                        <svg class="current-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
+                        </svg>
+                    </li>
+                    <li class="formation-item down-active">
+                        <span class="visually-hidden">По убыванию</span>
+                        <svg class="current-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path fill="#231F20" d="M5.5 10L0 0h11"></path>
+                        </svg>
+                    </li>
                 </ul>
             </section>
             <section class="section-hotel-1">

@@ -906,6 +906,7 @@ input#min-value{
     align-self: center;
     margin-right: 0px;
     margin-left: 6px;
+    width: 50px;
 }
 
 .value{

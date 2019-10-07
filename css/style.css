@@ -1243,3 +1243,12 @@ input#min-value{
 .check-list-2 li{
     position: relative;
 }
+
+.pool-check:hover,
+.parking-check:hover,
+.wi-fi-check:hover,
+.hotel-check:hover,
+.motel-check:hover,
+.apartments-check:hover{
+    outline: 2px solid green;
+}

@@ -39,7 +39,7 @@ img{
     height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active){
+.visually-hidden{
     position: absolute;
 
     width: 1px;
@@ -1209,6 +1209,7 @@ input#min-value{
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    cursor: pointer;
 }
 
 .check-list-1 input[type=checkbox]:checked + label::after,
@@ -1224,6 +1225,7 @@ input#min-value{
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    cursor: pointer;
 }
 
 .check-list-1 label,
@@ -1241,7 +1243,3 @@ input#min-value{
 .check-list-2 li{
     position: relative;
 }
-
-
-
-

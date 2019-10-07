@@ -28,40 +28,38 @@
             <section class="search-form">
                 <form class="search-form-hotel" action="https://echo.htmlacademy.ru" method="get">
                     <fieldset class="options-section">
-                        <legend>Инфраструктура:</legend>
-                        <div class="pool-check">
+                    <legend>Инфраструктура:</legend>
+                    <ul class="check-list-1">
+                        <li class="pool-check">
                         <input id="pool-check" type="checkbox" name="pool" checked class="visually-hidden">
-                        <span class="checkbox-on"></span>
                         <label for="pool-check">Бассейн</label>
-                        </div>
-                        <div class="parking-check">
+                        </li>
+                        <li class="parking-check">
                         <input id="parking-check" type="checkbox" name="parking" class="visually-hidden">
-                        <span class="checkbox-off"></span>
                         <label for="parking-check">Парковка</label>
-                        </div>
-                        <div class="wi-fi-check">
+                        </li>
+                        <li class="wi-fi-check">
                         <input id="wi-fi-check" type="checkbox" name="wi-fi" class="visually-hidden">
-                        <span class="checkbox-off"></span>
                         <label for="wi-fi-check">Wi-Fi</label>
-                        </div>
+                        </li>
+                    </ul>
                     </fieldset>
                     <fieldset class="apartment-section">
-                        <legend>Тип жилья:</legend>
-                        <div class="hotel-check">
+                    <legend>Тип жилья:</legend>
+                    <ul class="check-list-2">
+                        <li class="hotel-check">
                         <input id="hotel-check" type="checkbox" name="hotel" checked class="visually-hidden">
-                        <span class="checkbox-on"></span>
                         <label for="hotel-check">Гостиница</label>
-                        </div>
-                        <div class="motel-check">
+                        </li>
+                        <li class="motel-check">
                         <input id="motel-check" type="checkbox" name="motel" checked class="visually-hidden">
-                        <span class="checkbox-on"></span>
                         <label for="motel-check">Мотель</label>
-                        </div>
-                        <div class="apartments-check">
+                        </li>
+                        <li class="apartments-check">
                         <input id="apartments-check" type="checkbox" name="apartments" checked class="visually-hidden">
-                        <span class="checkbox-on"></span>
                         <label for="apartments-check">Апартаменты</label>
-                        </div>
+                        </li>
+                    </ul>
                     </fieldset>
                     <div class="cost-area">
                     <fieldset class="cost-section">
@@ -93,13 +91,13 @@
                 </ul>
                 </div>
                 <ul class="formation"> 
-                    <li class="formation-item">
+                    <li class="formation-item" tabindex="0">
                         <span class="visually-hidden">По возрастанию</span>
                         <svg class="current-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
                         </svg>
                     </li>
-                    <li class="formation-item down-active">
+                    <li class="formation-item down-active" tabindex="0">
                         <span class="visually-hidden">По убыванию</span>
                         <svg class="current-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                         <path fill="#231F20" d="M5.5 10L0 0h11"></path>

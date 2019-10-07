@@ -861,11 +861,7 @@ li.feature-hotel{
     align-content: center;
 }
 
-.search-form-hotel input{
-    width: 23px;
-    height: 23px;
-    margin-right: 17px;
-}
+
 
 .search-form-hotel label{
     font-weight: 400;
@@ -1112,7 +1108,7 @@ input#min-value{
     fill: #000000;
 }
 
-.formation-item:focus path{
+.formation-item:active path{
     fill: #81b3d2;
 }
 
@@ -1199,31 +1195,50 @@ input#min-value{
 }
 
 /*-- ОФормление чекбоксов в форме --*/
-.checkbox-on{
-    cursor: pointer;
-    background-image: url("../img/checkbox-on.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+.check-list-1 input[type=checkbox] + label::before,
+.check-list-2 input[type=checkbox] + label::before,
+.check-list-1 input[type=checkbox]:active + label::before,
+.check-list-2 input[type=checkbox]:active + label::before{
+    content: "";
+    position: absolute;
     width: 27px;
     height: 23px;
-    margin-right: 13px;
-}
-
-.checkbox-off{
-    cursor: pointer;
+    top: 0;
+    left: 0;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 23px;
+}
+
+.check-list-1 input[type=checkbox]:checked + label::after,
+.check-list-2 input[type=checkbox]:checked + label::after,
+.check-list-1 input[type=checkbox]:checked:active + label::after,
+.check-list-2 input[type=checkbox]:checked:active + label::after{
+    content: "";
+    position: absolute;
+    width: 27px;
     height: 23px;
-    margin-right: 17px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
 }
 
-.checkbox-on:disabled{
-    background-image: url("../img/checkbox-on-2.png"); 
+.check-list-1 label,
+.check-list-2 label{
+    margin-left: 37px;
 }
 
-.checkbox-off:disabled{
-    background-image: url("../img/checkbox-off-3.png");
+.check-list-1,
+.check-list-2{
+    list-style: none;
+    padding: 0;
 }
+
+.check-list-1 li,
+.check-list-2 li{
+    position: relative;
+}
+
+
+
 

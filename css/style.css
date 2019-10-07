@@ -1195,6 +1195,7 @@ input#min-value{
 }
 
 /*-- ОФормление чекбоксов в форме --*/
+
 .check-list-1 input[type=checkbox] + label::before,
 .check-list-2 input[type=checkbox] + label::before,
 .check-list-1 input[type=checkbox]:active + label::before,
@@ -1207,6 +1208,7 @@ input#min-value{
     left: 0;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .check-list-1 input[type=checkbox]:checked + label::after,
@@ -1221,6 +1223,7 @@ input#min-value{
     left: 0;
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .check-list-1 label,

@@ -693,19 +693,23 @@ img{
     height: 90px;
 }
 
-a.subtitle-hotel{
+.subtitle-hotel h2{
     font-size: 21px;
     line-height: 26px;
     color: #000000;
-    display: block;
 }
 
-a.subtitle-hotel:hover{
+.subtitle-hotel h2:hover{
     color: #81b3d2;
 }
 
-a.subtitle-hotel:focus{
+.subtitle-hotel h2:active{
     color: rgba(0, 0, 0, 0.3)
+}
+
+.subtitle-hotel{
+    margin-bottom: 6px;
+    margin-top: -6px;
 }
 
 li.feature-hotel{
@@ -1100,11 +1104,6 @@ input#min-value{
     color: #000000;
 }
 
-.selections a:active{
-    color: #81b3d2;
-    border-bottom: none;
-}
-
 .focus-selection a{
     color: #81b3d2;
     border-bottom: none;
@@ -1138,6 +1137,10 @@ input#min-value{
 }
 
 .formation-item:active path{
+    fill: #81b3d2;
+}
+
+.formation-item:focus path{
     fill: #81b3d2;
 }
 

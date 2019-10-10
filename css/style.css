@@ -507,12 +507,12 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 60px;
-    margin-right: 55px;
-    width: 513px;
+    margin-left: 55px;
+    width: 458px;
 }
 
 .adults-section{
-    width: 281px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -525,8 +525,6 @@ img{
 
 .adults-section label{
     align-self: center;
-    width: 112px;
-    padding-left: 55px;
     padding-top: 6px;
 }
 
@@ -539,7 +537,7 @@ img{
 }
 
 .child-section{
-    width: 232px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -547,7 +545,6 @@ img{
 }
 
 .child-section label{
-    width: 65x;
     align-self: center;
     padding-left: 53px;
     padding-top: 6px;
@@ -557,6 +554,9 @@ img{
 .adults-button input{
     text-align: center;
     padding-top: 6px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 38px;
 }
 
 /* Футер */

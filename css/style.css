@@ -138,6 +138,7 @@ img{
 .background-photo{
     margin-top: -56px;
     display: block;
+    width: 1200px;
 }
 
 .header-section{
@@ -155,20 +156,23 @@ img{
     top: 564px;
     display: flex;
     flex-direction: column;
-    width: 1200px;
     align-items: center;
+    width: 1200px;
+    padding-top: 59px;
+    padding-bottom: 50px;
 }
 
 .title h1{
     font-size: 21px;
     line-height: 26px;
-    margin-top: 60px;
-    margin-bottom: 13px;
     text-align: center;
+    margin: 0;
+    margin-bottom: 28px;
 }
 
 .subtitle-top{
-    margin-bottom: 50px;
+    margin: 0;
+    text-align: center;
 }
 
 .section-natural-city,
@@ -176,13 +180,17 @@ img{
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .section-city,
 .section-place{
     background-color: #81b3d2;
-    width: 400px;
+    width: 304px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 46px;
+    padding-bottom: 40px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -193,29 +201,38 @@ img{
 .sign{
     font-weight: 400;
     text-align: center;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin: 0;
+    margin-top: 7px;
 }
 
 .sign-subtitle{
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 27px;
 }
 
 .section-city h2{
     text-align: center;
-    margin-top: 49px;
+    margin: 0;
+    width: 100%;
 }
 
 .section-place h2{
     text-align: center;
-    margin-top: 46px;
+    margin: 0;
+    width: 100%;
+}
+
+.picture-1,
+.picture-2{
+    width: 800px;
+    min-height: 256px;
 }
 
 .advantages-1 h3,
 .advantages-2 h3{
     font-size: 21px;
     text-align: center;
+    display: block;
+    overflow: hidden;
 }
 
 .advantages-2{
@@ -245,12 +262,14 @@ img{
 .sign-advantages{
     margin: 0 auto;
     margin-bottom: 63px;
+    flex-grow: 1;
 }
 
 .section-adventages-1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
     width: 1200px;
     padding-left: 0px;
     margin: 0 auto;
@@ -336,6 +355,7 @@ img{
     margin-top: 25px;
     text-align: center;
     line-height: 21px;
+    flex-grow: 1;
 }
 
 .search-caption{
@@ -409,7 +429,11 @@ img{
     margin-bottom: 55px;
     padding-top: 15px;
     padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
     align-self: center;
+
+    word-break: break-all;
 
 }
 
@@ -578,6 +602,7 @@ img{
     width: 400px;
     margin: 0px;
     text-align: center;
+    word-break: break-all;
 }
 
 .social{
@@ -679,6 +704,8 @@ img{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: space-between;
+    width: 1055px;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding-left: 72px;
@@ -712,21 +739,21 @@ img{
     margin-top: -6px;
 }
 
-li.feature-hotel{
+.feature-hotel{
     color: #333333;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px; 
+    word-break: break-all;
 }
 
 .rating-1,
 .rating-2,
 .rating-3{
-    margin: 0 auto;
-    margin-left: 521px;
     display: flex;
     align-content: space-between;
     position: relative;
+    margin-left: auto;
 }
 
 .review-hotel-1,
@@ -769,6 +796,7 @@ li.feature-hotel{
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
+    word-break: break-all;
 }
 
 .more:hover{
@@ -789,6 +817,7 @@ li.feature-hotel{
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
+    word-break: break-all;
 }
 
 .button-hotel:hover{
@@ -839,6 +868,10 @@ li.feature-hotel{
 .search-form-hotel fieldset{
     border: none;
     margin-top: 84px;
+}
+
+.search-form-hotel label{
+    word-break: break-all;
 }
 
 .options-section,
@@ -1006,16 +1039,17 @@ input#min-value{
 }
 
 .submit-show{
-    width: 137px;
+    width: 138px;
     border: solid 2px #ffffff;
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     color: #ffffff;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: 84px;
+    word-break: break-all;
 }
 
 .submit-show:hover{
@@ -1063,8 +1097,8 @@ input#min-value{
     font-weight: 400;
     margin: 0;
     margin-left: 29px;
-    margin-right: 38px;
     padding-top: 7px;
+    width: 80px;
 }
 
 .selections{
@@ -1078,9 +1112,8 @@ input#min-value{
     list-style: none;
 }
 
-.selections li:first-child,
-.selections li:nth-child(2){
-    margin-right: 34px;
+.selections li{
+    margin-left: 34px;
 }
 
 .selections a{

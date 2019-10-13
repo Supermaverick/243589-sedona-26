@@ -8,10 +8,6 @@
     font-style: normal;
 }
 
-*{
-    outline: 1px solid green; 
-}
-
 body {
     margin: 0 auto;
     padding: 0;
@@ -710,11 +706,9 @@ img{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
-    width: 1055px;
+    width: 1200px;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    padding-left: 72px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -724,6 +718,7 @@ img{
 .section-hotel-3 img{
     width: 135px;
     height: 90px;
+    margin-left: 72px;
 }
 
 .subtitle-hotel h2{
@@ -760,6 +755,7 @@ img{
     align-content: space-between;
     position: relative;
     margin-left: auto;
+    margin-right: 73px;
 }
 
 .review-hotel-1,
@@ -1076,10 +1072,8 @@ input#min-value{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: white;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 1055px;
-    padding-left: 72px;
+    width: 1200px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -1087,7 +1081,7 @@ input#min-value{
 .selection-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0;
+    margin-left: 72px;
 }
 
 .search-assortment{
@@ -1156,6 +1150,8 @@ input#min-value{
     justify-content: space-between;
     width: 34px;
     margin: 0;
+    margin-left: auto;
+    margin-right: 73px;
     padding: 0;
 }
 
@@ -1337,15 +1333,6 @@ input#min-value{
 .check-list-1 li,
 .check-list-2 li{
     position: relative;
-}
-
-.pool-check:hover,
-.parking-check:hover,
-.wi-fi-check:hover,
-.hotel-check:hover,
-.motel-check:hover,
-.apartments-check:hover{
-    outline: 2px solid green;
 }
 
 /*-- Анимация формы на главной --*/

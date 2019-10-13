@@ -245,7 +245,7 @@ img{
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .list-advantages h3{
@@ -271,7 +271,7 @@ img{
     justify-content: center;
     align-items: stretch;
     width: 1200px;
-    padding-left: 0px;
+    padding-left: 0;
     margin: 0 auto;
 }
 
@@ -301,6 +301,12 @@ img{
     background-position: left top;
     width: 1200px;
     height: 473px;
+
+    display: none;
+}
+
+.modal-show{
+    display: block;
 }
 
 .search-section{
@@ -403,7 +409,7 @@ img{
     font-size: 21px;
     font-weight: 900; 
     width: 38px;
-    padding: 0px;
+    padding: 0;
     padding-top: 6px;
     margin: 0 auto;
 }
@@ -557,7 +563,7 @@ img{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 114px;
+    width: 118px;
 }
 
 .child-section{
@@ -600,7 +606,7 @@ img{
 
     display: block;
     width: 400px;
-    margin: 0px;
+    margin: 0;
     text-align: center;
     word-break: break-all;
 }
@@ -614,12 +620,12 @@ img{
 
 .social-list{
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-top: 36px;
     padding-bottom: 35px;
     width: 150px;
@@ -694,7 +700,7 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 2px;
-    padding-left: 0px;
+    padding-left: 0;
     width: 258px;
 } 
 
@@ -769,9 +775,9 @@ img{
 .review-hotel-1 h2,
 .review-hotel-2 h2,
 .review-hotel-3 h2{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .section-hotels img{
@@ -852,7 +858,7 @@ img{
     background-repeat: no-repeat;
     background-position: center;
     width: 1200px;
-    top: 0px;
+    top: 0;
     margin-top: -56px;
     display: block;
 }
@@ -879,8 +885,8 @@ img{
     display: flex;
     flex-direction: column;
     width: 240px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     margin-bottom: 31px;
 }
 
@@ -917,9 +923,9 @@ img{
 
 .cost-section{
     width: 318px;
-    padding: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 32px;
 }
 
@@ -945,9 +951,9 @@ input#min-value{
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
-    padding: 0px;
+    padding: 0;
     align-self: center;
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 4px;
     width: 50px;
 }
@@ -1034,7 +1040,7 @@ input#min-value{
 
 .button-left{
     position: absolute;
-    left: 0px;
+    left: 0;
     top: -9px;
 }
 
@@ -1087,7 +1093,7 @@ input#min-value{
 .search-assortment{
     font-size: 21px;
     line-height: 26px;
-    margin: 0px;
+    margin: 0;
     width: 135px;
 }
 
@@ -1102,8 +1108,8 @@ input#min-value{
 }
 
 .selections{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1186,8 +1192,8 @@ input#min-value{
     position: absolute;
     width: 89px;
     height: 17px;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 .feature-rating-2::before{
@@ -1197,8 +1203,8 @@ input#min-value{
     position: absolute;
     width: 65px;
     height: 17px;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 .feature-rating-3::before{
@@ -1208,8 +1214,8 @@ input#min-value{
     position: absolute;
     width: 41px;
     height: 17px;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 /*-- Иконки на главной --*/
@@ -1340,4 +1346,31 @@ input#min-value{
 .motel-check:hover,
 .apartments-check:hover{
     outline: 2px solid green;
+}
+
+/*-- Анимация формы на главной --*/
+@keyframes shake{
+    0%,
+    100%{
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90%{
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translateX(10px);
+    }
+}
+
+.modal-error{
+    animation: shake 0.6s;
 }

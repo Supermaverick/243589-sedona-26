@@ -28,15 +28,15 @@
                     <fieldset class="options-section">
                     <legend>Инфраструктура:</legend>
                     <ul class="check-list-1">
-                        <li class="pool-check" tabindex="0">
+                        <li class="pool-check">
                         <input id="pool-check" type="checkbox" name="pool" checked class="visually-hidden">
                         <label for="pool-check">Бассейн</label>
                         </li>
-                        <li class="parking-check" tabindex="0"> 
+                        <li class="parking-check"> 
                         <input id="parking-check" type="checkbox" name="parking" class="visually-hidden">
                         <label for="parking-check">Парковка</label>
                         </li>
-                        <li class="wi-fi-check" tabindex="0">
+                        <li class="wi-fi-check">
                         <input id="wi-fi-check" type="checkbox" name="wi-fi" class="visually-hidden">
                         <label for="wi-fi-check">Wi-Fi</label>
                         </li>
@@ -46,15 +46,15 @@
                     <legend>Тип жилья:</legend>
                     <ul class="check-list-2">
                         <li class="hotel-check">
-                        <input id="hotel-check" type="checkbox" name="hotel" checked class="visually-hidden" tabindex="0">
+                        <input id="hotel-check" type="checkbox" name="hotel" checked class="visually-hidden">
                         <label for="hotel-check">Гостиница</label>
                         </li>
                         <li class="motel-check">
-                        <input id="motel-check" type="checkbox" name="motel" checked class="visually-hidden" tabindex="0">
+                        <input id="motel-check" type="checkbox" name="motel" checked class="visually-hidden">
                         <label for="motel-check">Мотель</label>
                         </li>
                         <li class="apartments-check">
-                        <input id="apartments-check" type="checkbox" name="apartments" checked class="visually-hidden" tabindex="0">
+                        <input id="apartments-check" type="checkbox" name="apartments" checked class="visually-hidden">
                         <label for="apartments-check">Апартаменты</label>
                         </li>
                     </ul>
@@ -63,15 +63,15 @@
                     <fieldset class="cost-section">
                         <legend>Стоимость в сутки (Р):</legend>
                         <div class="value">
-                        <span class="text-check-1">От<input type="number" id="min-value" name="min-value" min="0" max="3000" value="0"></span>
+                        <span class="text-check-1">От<input type="text" id="min-value" name="min-value" value="" placeholder="0"></span>
                         <span class="vertikal-line"></span>
-                        <span class="text-check-2">До<input type="number" id="max-value" name="max-value" min="0" max="3000" value="3000"></span>
+                        <span class="text-check-2">До<input type="text" id="max-value" name="max-value" value="" placeholder="3000"></span>
                         </div>
                         <div class="radio-section">
                         <div class="contour-grey"></div>
                         <div class="contour-white"></div>
-                        <button class="button-left" type="button"></button>
-                        <button class="button-right" type="button"></button>
+                        <button class="button-left" type="button" tabindex="0"></button>
+                        <button class="button-right" type="button" tabindex="0"></button>
                         </div>
                     </fieldset>
                         <button class="submit-show" type="submit" value="Показать">Показать</button>

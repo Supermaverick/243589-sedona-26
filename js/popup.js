@@ -1,5 +1,5 @@
 var link = document.querySelector(".search-caption");
-var popup = document.querySelector(".background-form");
+var popup = document.querySelector(".widget");
 var form = popup.querySelector(form);
 var arrival = popup.querySelector("[name=data-arrival]");
 var departure = popup.querySelector("[name=data-departure]");

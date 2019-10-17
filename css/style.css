@@ -1,14 +1,20 @@
-@font-face {
+@font-face{
     font-family: "PT Sans";
-    src: url ("ptsans.woff2") format ("woff2"),
-        url ("ptsans.woff") format ("woff"),
-        url ("ptsansbold.woff2") format ("woff2"),
-        url ("ptsansbold.woff") format ("woff");
+    src:url("../fonts/ptsans.woff2") format("woff2"),
+        url("../fonts/ptsans.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
-body {
+@font-face{
+    font-family: "PT Sans";
+    src:url("../fonts/ptsansbold.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
     margin: 0 auto;
     padding: 0;
 
@@ -48,7 +54,6 @@ img{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-
 }
 
 /* Меню */
@@ -132,8 +137,22 @@ img{
 /* Основной блок */
 
 .background-photo{
-    margin-top: -56px;
+    margin-top: -82px;
     display: block;
+    width: 1200px;
+}
+
+.welcome-text{
+    position: absolute;
+    top: 132px;
+    left: calc(50% - 229px);
+    width: 459px;
+    display: block;
+}
+
+.polygon{
+    position: absolute;
+    top: 507px;
     width: 1200px;
 }
 
@@ -148,6 +167,7 @@ img{
 }
 
 .title{
+    background-color: #ffffff;
     position: absolute;
     top: 564px;
     display: flex;
@@ -164,6 +184,7 @@ img{
     text-align: center;
     margin: 0;
     margin-bottom: 28px;
+    width: 440px;
 }
 
 .subtitle-top{
@@ -199,6 +220,11 @@ img{
     text-align: center;
     margin: 0;
     margin-top: 7px;
+    width: 280px;
+}
+
+.sign-bridge{
+    width: 303px;
 }
 
 .sign-subtitle{
@@ -208,7 +234,7 @@ img{
 .section-city h2{
     text-align: center;
     margin: 0;
-    width: 100%;
+    width: 216px;
 }
 
 .section-place h2{
@@ -245,6 +271,7 @@ img{
 }
 
 .list-advantages h3{
+    width: 120px;
     margin: 0 auto;
     margin-top: 47px;
 }
@@ -256,6 +283,7 @@ img{
 }
 
 .sign-advantages{
+    width: 258px;
     margin: 0 auto;
     margin-bottom: 63px;
     flex-grow: 1;
@@ -291,18 +319,10 @@ img{
 
 /* Форма поиска гостиницы */
 
-.background-form{
-    background-image: url("../img/map.png");
-    background-repeat: no-repeat;
-    background-position: left top;
+.section-map{
+    position: relative;
     width: 1200px;
-    height: 473px;
-
-    display: none;
-}
-
-.modal-show{
-    display: block;
+    height: 593px;
 }
 
 .search-section{
@@ -326,7 +346,6 @@ img{
     align-content: space-between;
     width: 436px;
 }
-
 
 .search-title{
     font-size: 30px;
@@ -353,6 +372,8 @@ img{
 }
 
 .subtitle-adventages-1{
+    width: 284px;
+    margin: 0 auto;
     margin-bottom: 83px;
     margin-top: 25px;
     text-align: center;
@@ -385,11 +406,13 @@ img{
 
 .widget input:hover{
     background-color: #ebebeb;
+    border: solid 2px #ebebeb;
 }
 
 .widget input:focus{
     background-color: #ffffff;
     border: solid 2px #e5e5e5;
+    outline: none;
 }
 
 .widget input[type="text"]::placeholder{ 
@@ -450,7 +473,6 @@ img{
     align-self: center;
 
     word-break: break-all;
-
 }
 
 .search-button:hover{
@@ -463,15 +485,21 @@ img{
 }
 
 .widget{
-    position: relative;
+    right: 50%;
     display: flex;
     flex-direction: column;
     width: 568px;
-    margin: 0 auto;
     margin-bottom: 78px;
 
     box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -284px;
+
+    display: none;
 }
 
 .widget input{
@@ -483,8 +511,8 @@ img{
     text-transform: uppercase;
 
     background-color: #f2f2f2;
-    border: none;
-    height: 38px;
+    border: 2px solid #f2f2f2;
+    height: 34px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -519,9 +547,20 @@ img{
 
 .calendar-icon-arrival,
 .calendar-icon-departure{
-    background-repeat: no-repeat;
     width: 21px;
     height: 22px;
+    border: none;
+    background-color: rgba(0, 50, 50, 0);
+    padding: 0;
+    position: relative;
+}
+
+.calendar-icon-arrival path{
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .calendar-icon-arrival:hover path,
@@ -535,7 +574,7 @@ img{
 }
 
 .calendar-icon-arrival{
- position: absolute;   
+    position: absolute;   
     right: 63px;
     top: 9px;
 }
@@ -595,7 +634,7 @@ img{
     height: inherit;
 }
 
-.calendar input::-ms-clear {
+.calendar input::-ms-clear{
     display: none;
 }
 
@@ -607,6 +646,7 @@ img{
     align-items: center;
     flex-wrap: wrap;
     width: 1200px;
+    background-color: #ffffff;
 }
 
 .typeface{
@@ -664,9 +704,31 @@ img{
     fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-icon a{
+.social-icon-tw a{
     display: block;
     height: 15px;
+    padding-top: 17px;
+    padding-right: 14px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+}
+
+.social-icon-fb a{
+    display: block;
+    height: 22px;
+    padding-top: 13px;
+    padding-right: 17px;
+    padding-bottom: 13px;
+    padding-left: 17px;
+}
+
+.social-icon-you a{
+    display: block;
+    height: 16px;
+    padding-top: 16px;
+    padding-right: 13px;
+    padding-bottom: 16px;
+    padding-left: 13px;
 }
 
 .footer-author{
@@ -695,6 +757,11 @@ img{
 
 .author-logo:focus path{
     fill: #bdbbbc;
+}
+
+.footer-opacity{
+    opacity: 0.9;
+    margin-top: -120px;
 }
 
 /* Страница Гостиницы */
@@ -767,6 +834,7 @@ img{
 .rating-2,
 .rating-3{
     display: flex;
+    flex-direction: column;
     align-content: space-between;
     position: relative;
     margin-left: auto;
@@ -862,6 +930,7 @@ img{
 }
 
 /* Форма "Показать гостиницы" на странице Гостиницы */
+
 .search-form{
     background-color: #5496bd;
     color: #ffffff;
@@ -957,18 +1026,6 @@ img{
     width: 314px;
 }
 
-input#max-value,
-input#min-value{
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    border: none;
-    padding: 0;
-    align-self: center;
-    margin-right: 0;
-    margin-left: 4px;
-    width: 50px;
-}
-
 .search-form-hotel input[type="text"]::placeholder{ 
     color: #ffffff; 
 }
@@ -1002,31 +1059,24 @@ input#min-value{
     position: relative;
 }
 
-.vertikal-line{
-    width: 2px;
-    height: 22px;
-    background-color: #ffffff;
-    align-self: center;
-    position: absolute;
-    left: 50%;
-}
-
 .text-check-1{
-    font-weight: 400;
-    width: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    margin-left: 64px;
+    padding-left: 65px;
 }
 
 .text-check-2{
-    font-weight: 400;
-    width: 100px;
-    display: flex;
-    flex-wrap: wrap;
+    padding-left: 53px;
+    border-left: 2px solid #ffffff;
+}
+
+.value input{
+    width: 71px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    padding: 0;
     align-self: center;
-    margin-left: 47px;
+    margin-right: 0;
+    margin-left: 4px;
 }
 
 .contour-white{
@@ -1037,7 +1087,8 @@ input#min-value{
 }
 
 .contour-grey{
-    background-color: rgba(0, 1, 1, 0.2);
+    background-color: #ffffff;
+    opacity: 0.3;
     width: 317px;
     height: 2px;
     position: absolute;
@@ -1079,6 +1130,7 @@ input#min-value{
 .submit-show{
     width: 138px;
     border: solid 2px #ffffff;
+    border-radius: 2px;
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     color: #ffffff;
@@ -1215,26 +1267,32 @@ input#min-value{
     fill: #81b3d2;
 }
 
-.formation-item a:focus {
+.formation-item a:focus{
     outline: 1px solid #804700;
 }
 
 /*-- Звездочки рейтинга --*/
 
-.feature-rating-1::before{
+.grad-star-1,
+.grad-star-2,
+.grad-star-3{
+    margin-bottom: 62px; 
+}
+
+.grad-star-1::before{
     content: "";
-    background-image: url("../img/star.png");
+    background-image: url("../img/star.svg");
     background-repeat: space;
-    position: absolute;
     width: 89px;
     height: 17px;
+    position: absolute;
     top: 0;
     right: 0;
 }
 
-.feature-rating-2::before{
+.grad-star-2::before{
     content: "";
-    background-image: url("../img/star.png");
+    background-image: url("../img/star.svg");
     background-repeat: space;
     position: absolute;
     width: 65px;
@@ -1243,9 +1301,9 @@ input#min-value{
     right: 0;
 }
 
-.feature-rating-3::before{
+.grad-star-3::before{
     content: "";
-    background-image: url("../img/star.png");
+    background-image: url("../img/star.svg");
     background-repeat: space;
     position: absolute;
     width: 41px;
@@ -1317,6 +1375,7 @@ input#min-value{
     background-repeat: no-repeat;
     background-position: 0 0;
     cursor: pointer;
+    display: block;
 }
 
 .check-list-1 input[type=checkbox]:focus + label::before,
@@ -1344,7 +1403,7 @@ input#min-value{
 
 .check-list-1 input[type=checkbox]:checked:disabled + label::after,
 .check-list-2 input[type=checkbox]:checked:disabled + label::after{
-    background-image: url("../img/checkbox-on-2.png");
+    background-image: url("../img/checkbox-on-2.svg");
     background-repeat: no-repeat;
     background-position: 0 0;   
 }
@@ -1356,7 +1415,7 @@ input#min-value{
 
 .check-list-1 input[type=checkbox]:disabled + label::before,
 .check-list-2 input[type=checkbox]:disabled + label::before{
-    background-image: url("../img/checkbox-off-3.png");
+    background-image: url("../img/checkbox-off-3.svg");
     background-repeat: no-repeat;
     background-position: 0 0;   
 }
@@ -1406,4 +1465,8 @@ input#min-value{
 
 .modal-error{
     animation: shake 0.6s;
+}
+
+.modal-show{
+    display: block;
 }

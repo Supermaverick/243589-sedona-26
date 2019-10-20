@@ -31,6 +31,7 @@ body{
     max-width: 1200px;
 
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    background-color: #ffffff;
 }
 
 a{
@@ -87,7 +88,8 @@ img{
 
 .main-header-logo{
     position: absolute;
-    left: calc(50% - 70px);     
+    left: calc(50% - 70px);
+    z-index: 100;     
 }
 
 .site-navigation-section-1{
@@ -147,9 +149,11 @@ img{
     height: 773px;
     margin-top: -82px;
     display: block;
-    /*background-image: url(../img/background-photo.jpg);*/
+    background-image: url(../img/background-photo.jpg);
     background-color: #81b3d2;
-    mask-image: url(../img/polygon.svg);
+    -moz-clip-path: polygon(0px 82px, 1200px 82px, 1200px 533px, 950px 558px, 950px 533px, 600px 591px, 250px 533px, 250px 558px, 0px 533px, 0px 591px);
+    -webkit-clip-path: polygon(0px 82px, 1200px 82px, 1200px 533px, 950px 558px, 950px 533px, 600px 591px, 250px 533px, 250px 558px, 0px 533px, 0px 591px);
+    clip-path: polygon(0px 82px, 1200px 82px, 1200px 533px, 950px 558px, 950px 533px, 600px 591px, 250px 533px, 250px 558px, 0px 533px, 0px 591px);
 }
 
 .background-photo{

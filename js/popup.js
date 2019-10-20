@@ -19,8 +19,3 @@ form.addEventListener("submit", function (evt){
         console.log("Заполните пустые поля");
     }
 });
-        
-close.addEventListener("click", function (evt){
-    evt.preventDefault();
-    popup.classList.remove("modal-error");
-})

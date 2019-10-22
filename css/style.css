@@ -146,19 +146,30 @@ img{
 
 .background-section{
     width: 1200px;
-    height: 773px;
-    margin-top: -82px;
+    min-height: 724px;
+    /*margin-top: -82px;*/
     display: block;
-    background-image: url(../img/background-photo.jpg);
+    background: url(../img/background-photo.jpg) 0 -64px no-repeat;
+    background-size: 1200px 800px;
     background-color: #81b3d2;
-    -moz-clip-path: polygon(0px 82px, 1200px 82px, 1200px 533px, 950px 558px, 950px 533px, 600px 591px, 250px 533px, 250px 558px, 0px 533px, 0px 591px);
-    -webkit-clip-path: polygon(0px 82px, 1200px 82px, 1200px 533px, 950px 558px, 950px 533px, 600px 591px, 250px 533px, 250px 558px, 0px 533px, 0px 591px);
-    clip-path: polygon(0px 82px, 1200px 82px, 1200px 533px, 950px 558px, 950px 533px, 600px 591px, 250px 533px, 250px 558px, 0px 533px, 0px 591px);
+    position: relative;
+}
+
+.background-section::after{
+    content: "";
+    background-image: url("../img/polygon.svg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 60px;
+    position: absolute;
+    bottom: 212px;
+    left: 0;
+    display: block;
 }
 
 .background-photo{
     position: absolute;
-    top: 132px;
+    top: 77px;
     left: calc(50% - 230px);
     display: block;
     width: 459px;
@@ -244,7 +255,7 @@ img{
 }
 
 .sign-subtitle{
-    margin-top: 27px;
+    margin-top: 25px;
 }
 
 .section-city h2{
@@ -305,7 +316,7 @@ img{
 .sign-advantages{
     width: 258px;
     margin: 0 auto;
-    margin-bottom: 63px;
+    margin-bottom: 59px;
     flex-grow: 1;
 }
 
@@ -350,8 +361,8 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     width: 1200px;
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-top: 50px;
+    padding-bottom: 48px;
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -396,7 +407,7 @@ img{
 .subtitle-adventages-1{
     width: 284px;
     margin: 0 auto;
-    margin-bottom: 83px;
+    margin-bottom: 82px;
     margin-top: 25px;
     text-align: center;
     line-height: 21px;
@@ -541,7 +552,7 @@ img{
 
 .calendar input{
     width: 330px;
-    padding-left: 12px;
+    padding-left: 10px;
 }
 
 .data-arrival{
@@ -550,7 +561,7 @@ img{
 }
 
 .data-departure{
-    margin-bottom: 29px;
+    margin-bottom: 30px;
 }
 
 .calendar{
@@ -563,7 +574,6 @@ img{
     width: 112px;
     margin: 0;
     padding-left: 56px;
-    padding-top: 6px;
     align-self: center;
 }
 
@@ -611,13 +621,13 @@ img{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
     margin-left: 55px;
     width: 458px;
 }
 
 .adults-section{
-    width: 50%;
+    width: 226px;
     display: flex;
     justify-content: space-between;
 }
@@ -635,7 +645,7 @@ img{
 }
 
 .child-section{
-    width: 50%;
+    width: 232px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -643,8 +653,8 @@ img{
 
 .child-section label{
     align-self: center;
-    padding-left: 53px;
-    padding-top: 6px;
+    padding-left: 54px;
+    padding-top: 2px;
 }
 
 .child-button input,
@@ -783,7 +793,7 @@ img{
 }
 
 .footer-index{
-    margin-top: -120px;
+    margin-top: -119px;
 }
 
 /* Страница Гостиницы */

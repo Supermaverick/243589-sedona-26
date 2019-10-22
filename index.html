@@ -92,9 +92,9 @@
                     <img class="visually-hidden" src="img/map.png" width="1200" height="593" alt="Карта Седоны">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d725394.1470475363!2d-112.12497569654485!3d34.93542915419065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1571510901646!5m2!1sru!2sru" width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     <form class="widget" action="https://echo.htmlacademy.ru" method="get">
-                        <div class="calendar data-arrival">
+                        <div class="calendar data-arrival validation">
                             <label for="data-arrival">Дата заезда:</label>
-                            <input class="validation" id="data-arrival" type="text" name="data-arrival" value="" placeholder="24 апреля 2017" required>
+                            <input class="validation" id="data-arrival" type="text" name="data-arrival" value="" placeholder="24 апреля 2017">
                             <button class="calendar-icon-arrival" type="button">
                                 <span class="visually-hidden">Выберите дату заезда</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -103,9 +103,9 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="calendar data-departure">
+                        <div class="calendar data-departure validation">
                             <label for="data-departure">Дата выезда:</label>
-                            <input class="validation" id="data-departure" type="text" name="data-departure" value="" placeholder="4 июля 2017" required>
+                            <input id="data-departure" type="text" name="data-departure" value="" placeholder="4 июля 2017">
                             <button class="calendar-icon-departure" type="button">
                                 <span class="visually-hidden">Выберите дату выезда</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -115,19 +115,19 @@
                             </button>
                         </div>
                         <div class="people-section">
-                            <div class="adults-section">
+                            <div class="adults-section validation">
                                 <label for="adult">Взрослые:</label>
                                 <div class="adults-button">
                                     <button class="control" type="button">&ndash;</button>
-                                    <input class="validation" id="adult" type="text" name="adult" value="" placeholder="2" required>
+                                    <input id="adult" type="text" name="adult" value="" placeholder="2">
                                     <button class="control" type="button">+</button>
                                 </div>
                             </div>
-                            <div class="child-section">
+                            <div class="child-section validation">
                                 <label for="child">Дети:</label>
                                 <div class="child-button">
                                     <button class="control" type="button">&ndash;</button>
-                                    <input class="validation" id="child" type="text" name="child" value="" placeholder="0" required>
+                                    <input id="child" type="text" name="child" value="" placeholder="0">
                                     <button class="control" type="button">+</button>
                                 </div>
                             </div>

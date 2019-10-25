@@ -531,8 +531,6 @@ img{
     top: 0;
     left: 50%;
     margin-left: -284px;
-
-    display: none;
 }
 
 .widget input{
@@ -959,7 +957,7 @@ img{
     padding-bottom: 3px;
     padding-right: 13px;
     padding-left: 16px; 
-    align-self: flex-end;
+    margin-top: auto;
 }
 
 /* Форма "Показать гостиницы" на странице Гостиницы */
@@ -1306,14 +1304,7 @@ img{
 
 /*-- Звездочки рейтинга --*/
 
-.grad-star-1,
-.grad-star-2,
-.grad-star-3{
-    margin-bottom: 62px; 
-}
-
-.grad-star-1::before{
-    content: "";
+.grad-star-1{
     background-image: url("../img/star.svg");
     background-repeat: space;
     width: 89px;
@@ -1324,8 +1315,7 @@ img{
     display: block;
 }
 
-.grad-star-2::before{
-    content: "";
+.grad-star-2{
     background-image: url("../img/star.svg");
     background-repeat: space;
     position: absolute;
@@ -1336,8 +1326,7 @@ img{
     display: block;
 }
 
-.grad-star-3::before{
-    content: "";
+.grad-star-3{
     background-image: url("../img/star.svg");
     background-repeat: space;
     position: absolute;
@@ -1397,6 +1386,51 @@ img{
 
 /*-- ОФормление чекбоксов в форме --*/
 
+.checkbox-on,
+.checkbox-on:active{
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    display: block;  
+}
+
+.checkbox-off,
+.checkbox-off:active{
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    display: block;
+}
+
+.checkbox-on:focus,
+.checkbox-off:focus{
+    outline: 1px solid #804700;
+}
+
+.checkbox-on-disabled{
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/checkbox-on-2.svg");
+    cursor: pointer;
+    display: block;
+}
+
+/*
 .check-list-1 input[type=checkbox] + label::before,
 .check-list-2 input[type=checkbox] + label::before,
 .check-list-1 input[type=checkbox]:active + label::before,
@@ -1455,6 +1489,7 @@ img{
     background-repeat: no-repeat;
     background-position: 0 0;   
 }
+*/
 
 .check-list-1 label{
     margin-left: 39px;
@@ -1524,4 +1559,10 @@ img{
     80%{
         transform: translateX(10px);
     }
+}
+
+.section-map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
 }

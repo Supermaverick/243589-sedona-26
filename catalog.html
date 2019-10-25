@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Забронировать гостиницу в Седоне</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="hotels-page">
         <div class="main-container">
@@ -29,16 +29,25 @@
                             <legend>Инфраструктура:</legend>
                             <ul class="check-list-1">
                                 <li class="pool-check">
-                                    <input id="pool-check" type="checkbox" name="pool" checked class="visually-hidden">
-                                    <label for="pool-check">Бассейн</label>
+                                    <label>
+                                        <input id="pool-check" type="checkbox" name="pool" checked class="visually-hidden">
+                                        <span class="checkbox-on" tabindex="0"></span>
+                                        Бассейн
+                                    </label>
                                 </li>
                                 <li class="parking-check"> 
-                                    <input id="parking-check" type="checkbox" name="parking" class="visually-hidden">
-                                    <label for="parking-check">Парковка</label>
+                                    <label>
+                                        <input id="parking-check" type="checkbox" name="parking" class="visually-hidden">
+                                        <span class="checkbox-off" tabindex="0"></span>
+                                        Парковка
+                                    </label>
                                 </li>
                                 <li class="wi-fi-check">
-                                    <input id="wi-fi-check" type="checkbox" name="wi-fi" class="visually-hidden">
-                                    <label for="wi-fi-check">Wi-Fi</label>
+                                    <label>
+                                        <input id="wi-fi-check" type="checkbox" name="wi-fi" class="visually-hidden">
+                                        <span class="checkbox-off" tabindex="0"></span>
+                                        Wi-Fi
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -46,16 +55,25 @@
                             <legend>Тип жилья:</legend>
                             <ul class="check-list-2">
                                 <li class="hotel-check">
-                                    <input id="hotel-check" type="checkbox" name="hotel" checked class="visually-hidden">
-                                    <label for="hotel-check">Гостиница</label>
+                                    <label>
+                                        <input id="hotel-check" type="checkbox" name="hotel" checked class="visually-hidden">
+                                        <span class="checkbox-on" tabindex="0"></span>
+                                        Гостиница
+                                    </label>
                                 </li>
                                 <li class="motel-check">
-                                    <input id="motel-check" type="checkbox" name="motel" checked class="visually-hidden">
-                                    <label for="motel-check">Мотель</label>
+                                    <label>
+                                        <input id="motel-check" type="checkbox" name="motel" checked class="visually-hidden">
+                                        <span class="checkbox-on" tabindex="0"></span>
+                                        Мотель
+                                    </label>
                                 </li>
                                 <li class="apartments-check">
-                                    <input id="apartments-check" type="checkbox" name="apartments" checked class="visually-hidden">
-                                    <label for="apartments-check">Апартаменты</label>
+                                    <label>
+                                        <input id="apartments-check" type="checkbox" name="apartments" checked class="visually-hidden">
+                                        <span class="checkbox-on" tabindex="0"></span>
+                                        Апартаменты
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>

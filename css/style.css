@@ -1386,55 +1386,10 @@ img{
 
 /*-- ОФормление чекбоксов в форме --*/
 
-.checkbox-on,
-.checkbox-on:active{
-    position: absolute;
-    width: 27px;
-    height: 23px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/checkbox-on.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    cursor: pointer;
-    display: block;  
-}
-
-.checkbox-off,
-.checkbox-off:active{
-    position: absolute;
-    width: 27px;
-    height: 23px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/checkbox-off.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    cursor: pointer;
-    display: block;
-}
-
-.checkbox-on:focus,
-.checkbox-off:focus{
-    outline: 1px solid #804700;
-}
-
-.checkbox-on-disabled{
-    position: absolute;
-    width: 27px;
-    height: 23px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/checkbox-on-2.svg");
-    cursor: pointer;
-    display: block;
-}
-
-/*
-.check-list-1 input[type=checkbox] + label::before,
-.check-list-2 input[type=checkbox] + label::before,
-.check-list-1 input[type=checkbox]:active + label::before,
-.check-list-2 input[type=checkbox]:active + label::before{
+.check-list-1 input[type=checkbox] + .checkbox-indicator,
+.check-list-2 input[type=checkbox] + .checkbox-indicator,
+.check-list-1 input[type=checkbox]:active + .checkbox-indicator,
+.check-list-2 input[type=checkbox]:active + .checkbox-indicator{
     content: "";
     position: absolute;
     width: 27px;
@@ -1448,17 +1403,17 @@ img{
     display: block;
 }
 
-.check-list-1 input[type=checkbox]:focus + label::before,
-.check-list-2 input[type=checkbox]:focus + label::before,
-.check-list-1 input[type=checkbox]:focus + label::after,
-.check-list-2 input[type=checkbox]:focus + label::after{
+.check-list-1 input[type=checkbox]:focus + .checkbox-indicator,
+.check-list-2 input[type=checkbox]:focus + .checkbox-indicator,
+.check-list-1 input[type=checkbox]:focus + .checkbox-indicator,
+.check-list-2 input[type=checkbox]:focus + .checkbox-indicator{
     outline: 1px solid #804700;
 }
 
-.check-list-1 input[type=checkbox]:checked + label::after,
-.check-list-2 input[type=checkbox]:checked + label::after,
-.check-list-1 input[type=checkbox]:checked:active + label::after,
-.check-list-2 input[type=checkbox]:checked:active + label::after{
+.check-list-1 input[type=checkbox]:checked + .checkbox-indicator,
+.check-list-2 input[type=checkbox]:checked + .checkbox-indicator,
+.check-list-1 input[type=checkbox]:checked:active + .checkbox-indicator,
+.check-list-2 input[type=checkbox]:checked:active + .checkbox-indicator{
     content: "";
     position: absolute;
     width: 27px;
@@ -1471,25 +1426,19 @@ img{
     cursor: pointer;
 }
 
-.check-list-1 input[type=checkbox]:checked:disabled + label::after,
-.check-list-2 input[type=checkbox]:checked:disabled + label::after{
+.check-list-1 input[type=checkbox]:checked:disabled + .checkbox-indicator,
+.check-list-2 input[type=checkbox]:checked:disabled + .checkbox-indicator{
     background-image: url("../img/checkbox-on-2.svg");
     background-repeat: no-repeat;
     background-position: 0 0;   
 }
 
-.check-list-1 input[type=checkbox]:checked:disabled + label::before,
-.check-list-2 input[type=checkbox]:checked:disabled + label::before{
-    display: none;   
-}
-
-.check-list-1 input[type=checkbox]:disabled + label::before,
-.check-list-2 input[type=checkbox]:disabled + label::before{
+.check-list-1 input[type=checkbox]:disabled + .checkbox-indicator,
+.check-list-2 input[type=checkbox]:disabled + .checkbox-indicator{
     background-image: url("../img/checkbox-off-3.svg");
     background-repeat: no-repeat;
     background-position: 0 0;   
 }
-*/
 
 .check-list-1 label{
     margin-left: 39px;
@@ -1565,4 +1514,8 @@ img{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.close-js{
+    display: none;
 }

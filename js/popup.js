@@ -2,6 +2,7 @@ var link = document.querySelector(".search-caption");
 var popup = document.querySelector(".widget");
 var arrival = popup.querySelector("[name=data-arrival]");
 var form = popup.querySelector("form");
+var button = popup.querySelector(".search-button");
 var validation = popup.querySelectorAll(".validation");
 window.addEventListener("load", function(evt) {
     evt.preventDefault();
@@ -22,13 +23,13 @@ window.addEventListener("keydown", function(evt) {
         }
     }
 });
-form.addEventListener("submit", function(evt) {
+button.addEventListener("click", function(evt) {
     for (var i = 0; i < validation.length; i++) {
         if (!validation[i].value) {
             evt.preventDefault();
-            popup.classList.add("modal-error");
-            popup.offsetWidth = popup.offsetWidth;
             popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modal-error");
         }
     }  
 });
